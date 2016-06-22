@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="de.hdodenhof.circleimageview.sample.MainActivity$PlaceholderFragment">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="@dimen/base_padding"
-        android:background="@color/light">
+        android:background="@color/dark">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/hugh"
+            android:src="@drawable/img2"
             app:border_width="2dp"
-            app:border_color="@color/dark" />
+            app:border_color="@color/light" />
+
+        <in.nirmalkumar.views.RoundedImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            app:radius="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img"
+            android:visibility="gone"
+            app:border_width2="2dp"
+            app:vignette="false"
+            app:border_color2="@color/light" />
+
 
     </RelativeLayout>
 
@@ -31,13 +41,15 @@
         android:padding="@dimen/base_padding"
         android:background="@color/dark">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+        <in.nirmalkumar.views.RoundedImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            app:radius="20dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/hugh"
-            app:border_width="2dp"
-            app:border_color="@color/light" />
+            android:src="@drawable/img2"
+            app:border_width2="2dp"
+            app:vignette="true"
+            app:border_color2="@color/light" />
 
     </RelativeLayout>
 

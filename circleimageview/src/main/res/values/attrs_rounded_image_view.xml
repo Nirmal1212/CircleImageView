@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="RoundedImageView">
+        <attr name="border_width2" format="dimension" />
+        <attr name="border_color2" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="vignette" format="boolean" />
+    </declare-styleable>
+</resources>
